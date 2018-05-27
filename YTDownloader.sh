@@ -73,6 +73,7 @@ function video_itag() {
   done
 }
 
+#function that converts file and does a little tidying
 function convert_file() {
   ffmpeg -i "$FILENAME" "$FILENAME$DOWNLOAD_FORMAT"
   rm "$FILENAME"
